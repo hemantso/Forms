@@ -1,0 +1,21 @@
+<%= form_for @user do |f| %>
+    <%=f.label :username, "username:" %>
+    <%=f.text_field :username%>
+    <%=f.label :email, "email:" %>
+    <%=f.email_field :email%>
+    <%=f.label :password, "password:" %>
+    <%=f.password_field :password%>
+    <%=f.submit "Create" %>
+<%end%>
+
+<% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% @post.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
