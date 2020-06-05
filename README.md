@@ -1,6 +1,6 @@
 # Project : Bare Metal Forms and Helpers
 
-This project contains basic form structure. Stored the form data in user model. Crete and Update method used on the database from frontend.
+This project contains basic form structure. Stored the form data in user model. Create and Update method used on the database from frontend.
 
 
 ## Built With
