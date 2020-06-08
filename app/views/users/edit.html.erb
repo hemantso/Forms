@@ -1,0 +1,16 @@
+<%= form_for @user do |f| %>
+    <ul>
+    <% show_errors(@user).each do |error| %>
+    <li><%= error %></li>
+    <% end %>
+    </ul>
+
+    <%=f.label :username, "username:" %>
+    <%=f.text_field :username%>
+    <%=f.label :email, "email:" %>
+    <%=f.email_field :email%>
+    <%=f.label :password, "password:" %>
+    <%=f.password_field :password%>
+    <%=f.submit "Update" %>
+    
+<%end%>
